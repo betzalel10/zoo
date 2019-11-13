@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Beast } from '../models/beast';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class BeastsService {
 
-  constructor(private http:HttpClientModule) {
-    
-    http.get()
+  constructor(private http:HttpClient) {
+ 
+    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/bird.json')
     .subscribe(data => {
       this.beasts = data as Beast[]
       this.currentBeast = this.beasts[0]
     })
+    
 }
 
 beasts:Beast[] =[]
