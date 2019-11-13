@@ -1,9 +1,10 @@
-header{
+/* header{
     height: 10%;
-}
+} */
 .bg-header{
     display: flex;
     justify-content: space-between;
+    
     background-color: mediumorchid;
     align-items: center;
     

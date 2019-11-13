@@ -2,10 +2,12 @@
 .nav-ul{
     display: flex;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
     width: 50%;
 }
 li{
     margin: 10px;
+    color: maroon
 }
 li:hover{
     font-weight: bold;
