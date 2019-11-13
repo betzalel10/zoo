@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.list{
+    display: inline-block;
+    width: 49%;
+}
+.cards{
+    
+    display: inline-block;
+    width: 350px;
+    height: 450px;
+    background-color: darkorange;
+    text-align: center;
+}
+h1{
+    color: deeppink;
+    text-align: center;
+}
+div{
+    color: blue;
+}

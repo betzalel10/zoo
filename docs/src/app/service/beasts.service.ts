@@ -1,0 +1,32 @@
+import { Injectable } from '@angular/core';
+import { Beast } from '../models/beast';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class BeastsService {
+
+  constructor(private http:HttpClientModule) {
+    
+    http.get()
+    .subscribe(data => {
+      this.beasts = data as Beast[]
+      this.currentBeast = this.beasts[0]
+    })
+}
+
+beasts:Beast[] =[]
+
+// beasts=[
+//   {name:'Horse', size:'180cm', lifeSpan:'30y',habitat:'England' ,img:'https://media1.giphy.com/media/l9mASFqtemeKk/source.gif'},
+//   {name:'Cow', size:'150cm', lifeSpan:'10y',habitat:'North Africa' ,img:'https://localtvwqad.files.wordpress.com/2018/04/giphy.gif'},
+//   {name:'Sheep', size:'90cm', lifeSpan:'15y',habitat:'Sardinia' ,img:'https://laughingsquid.com/wp-content/uploads/2018/08/Sheep-Goes-for-Ride-on-Tire-Swing.gif'},
+//   {name:'Dog', size:'60cm', lifeSpan:'8y',habitat:'Eurasia' ,img:'https://media.giphy.com/media/L63OXnIUDzN9S/giphy-downsized-large.gif'},
+//   {name:'Goat', size:'100cm', lifeSpan:'12y',habitat:'Israel' ,img:'https://i.pinimg.com/originals/5d/62/e9/5d62e9133846b036980fdc82e6f6b55b.gif'},
+//  ]
+
+ currentBeastIndex = 0
+ currentBeast:Beast
+//  currentBeast = this.beasts[this.currentBeastIndex]
+ }
