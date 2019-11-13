@@ -1,4 +1,4 @@
-export class Beast {
+export class Animal {
     name:string
     size:string
     lifespan:string

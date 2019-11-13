@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Beast } from '../models/beast';
+
 import { HttpClient } from '@angular/common/http';
+import { Animal } from 'src/app/models/animal';
 
 
 @Injectable({
@@ -10,15 +11,15 @@ export class BeastsService {
 
   constructor(private http:HttpClient) {
  
-    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/bird.json')
+    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/animal.json')
     .subscribe(data => {
-      this.beasts = data as Beast[]
+      this.beasts = data as Animal[]
       this.currentBeast = this.beasts[0]
     })
     
 }
 
-beasts:Beast[] =[]
+beasts:Animal[] =[]
 
 // beasts=[
 //   {name:'Horse', size:'180cm', lifeSpan:'30y',habitat:'England' ,img:'https://media1.giphy.com/media/l9mASFqtemeKk/source.gif'},
@@ -29,6 +30,6 @@ beasts:Beast[] =[]
 //  ]
 
  currentBeastIndex = 0
- currentBeast:Beast
+ currentBeast:Animal
 //  currentBeast = this.beasts[this.currentBeastIndex]
  }
