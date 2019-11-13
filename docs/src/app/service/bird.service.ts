@@ -9,7 +9,7 @@ export class BirdService {
 
   constructor(private http:HttpClient) {
     
-    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/animal.json')
+    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/bird.json')
     .subscribe(data => {
       this.birds = data as Animal[]
       this.currentBird = this.birds[0]

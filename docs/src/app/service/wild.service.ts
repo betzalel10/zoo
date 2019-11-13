@@ -9,7 +9,7 @@ export class WildService {
 
   constructor(private http:HttpClient) {
 
-    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/animal.json')
+    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/wild.json')
     .subscribe(data => {
       this.wilds = data as Animal[]
       this.currentWild = this.wilds[0]
