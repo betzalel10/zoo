@@ -11,7 +11,7 @@ export class BeastsService {
 
   constructor(private http:HttpClient) {
  
-    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/docs/src/assets/beast.json')
+    http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/src/assets/beast.json')
     .subscribe(data => {
       this.beasts = data as Animal[]
       this.currentBeast = this.beasts[0]
