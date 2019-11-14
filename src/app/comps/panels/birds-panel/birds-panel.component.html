@@ -11,7 +11,7 @@
         </ul> 
     </div>
 
-    <div class="cards">
+    <div class="cards" *ngIf="birdSvc.currentBird">
         <app-bird-card></app-bird-card>
     </div>
 </div>

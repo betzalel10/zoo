@@ -9,6 +9,8 @@ export class WildService {
 
   constructor(private http:HttpClient) {
 
+    console.log('ctor wildService');
+    
     http.get('https://raw.githubusercontent.com/betzalel10/zoo/master/src/assets/wild.json')
     .subscribe(data => {
       this.wilds = data as Animal[]
