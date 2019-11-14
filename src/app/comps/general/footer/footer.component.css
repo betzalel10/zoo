@@ -1,0 +1,20 @@
+
+hr{
+    color: darkorange;
+   
+}
+h1{
+    text-align: center;
+    color: crimson;
+}
+img{
+    width: 120px;
+    height: 100px;
+}
+div{
+    display: flex
+    
+}
+span{
+    color: darkgreen;
+}

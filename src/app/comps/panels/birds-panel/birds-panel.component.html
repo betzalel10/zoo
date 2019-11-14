@@ -1,0 +1,17 @@
+
+
+<h1>Welcome to the BIRD observatory</h1>
+
+<div class="flex">
+    
+    <div class="list">
+        <h2>Our bird list</h2>
+        <ul>
+            <li *ngFor="let b of birdSvc.birds"><h2>{{ b.name }}</h2></li>
+        </ul> 
+    </div>
+
+    <div class="cards">
+        <app-bird-card></app-bird-card>
+    </div>
+</div>

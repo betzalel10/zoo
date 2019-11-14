@@ -1,0 +1,23 @@
+
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    width: 50%;
+}
+li{
+    margin: 10px;
+    color: maroon
+}
+li:hover{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+li > img{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+

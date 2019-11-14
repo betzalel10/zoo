@@ -1,0 +1,33 @@
+/* header{
+    height: 10%;
+} */
+.bg-header{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: mediumorchid;
+    align-items: center;
+    
+}
+.logo{
+    width: 25%;  
+}
+.logo > img{
+    width: 150px;
+}
+h4{
+    color: goldenrod;
+    padding-left: 15px;
+    margin: 0;
+}
+h1{
+    color: darkgreen;
+    margin: 0;
+}
+.zoo-name{
+    padding: 0 20px;
+}
+app-nevigation{
+    display: block;
+    width: 50%;
+}
